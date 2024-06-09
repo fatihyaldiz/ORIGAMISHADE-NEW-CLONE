@@ -1,0 +1,270 @@
+/* FONT EKLENMESI */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* font-family: "Open Sans", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+a {
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+img {
+  max-width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(57, 57, 56);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 60px;
+}
+.navbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu_bar {
+  display: none;
+}
+/* .navbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+.container_left {
+  width: 265px;
+  height: 91px;
+  object-fit: cover;
+}
+.was {
+  color: rgb(162, 157, 157);
+}
+.nav_links {
+  display: flex;
+}
+.nav_links li a {
+  margin-left: 15px;
+  color: #fff;
+  padding: 5px 15px;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.nav_links li a:hover {
+  background: #6e706f;
+  text-decoration: overline;
+}
+.section_products {
+  background-color: rgb(57, 57, 56);
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 15px 0px;
+}
+.section_products images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in;
+}
+.images a:hover {
+  object-fit: cover;
+  transform: scale(1.03);
+}
+.images :nth-child(2) {
+  border-radius: 30px;
+}
+/* .deneme {
+  background: rgb(57, 57, 56);
+  position: absolute;
+  top: 0px;
+  left: 462px;
+  z-index: 10;
+  object-fit: cover;
+  width: 265px;
+  height: 91px;
+  max-width: 100%;
+} */
+.bespoke h1 {
+  font-size: 50px;
+  position: absolute;
+  top: 250px;
+  left: 540px;
+  background: rgb(191, 186, 186);
+}
+/* CALLISTUR SAYFASI */
+.background {
+  font-size: 50px;
+}
+
+/* CALLISTUR GALERI SAYFASI */
+.menu-bar {
+  background: #646567;
+  text-align: center;
+}
+.menu-bar ul {
+  /* yazilari yan yana getiriyoruz */
+  display: inline-flex;
+  /* text in basindaki noktalari kaldiriyoruz */
+  list-style: none;
+}
+/* aralarini aciyoruz ve nav in yuksekligi */
+.menu-bar ul li {
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a {
+  /* textin altindaki cizgiyi kaldiriyor */
+  text-decoration: none;
+  color: #fff;
+}
+.active,
+.menu-bar ul li:hover {
+  background: #ea4b4b;
+  border-radius: 10px;
+}
+.menu-bar .fas {
+  margin-right: 8px;
+}
+/* sub-menu_1 in gorunmesini istemiyoruz */
+.sub-menu_1 {
+  display: none;
+}
+/* Fareyi uzerine getirince cikacak */
+.menu-bar ul li:hover .sub-menu_1 {
+  display: block;
+  /* sadece bulundugu DIV i kapsamasini istiyoruz */
+  position: absolute;
+  background: #e02007;
+  margin-top: 15px;
+  margin-left: -15px;
+  font-size: 10px;
+}
+/* uL leri alt alta gelmesini sagliyoruz */
+.menu-bar ul li:hover .sub-menu_1 ul {
+  display: block;
+}
+.menu-bar ul li:hover .sub-menu_1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 0.5px solid #fff;
+  background: transparent;
+  text-align: left;
+  border-radius: 0;
+  cursor: pointer;
+}
+/* hover yapinca rengi degissin */
+
+.menu-bar ul li:hover .sub-menu_1 ul li a:hover {
+  color: #b2ff00;
+}
+
+.img_sec2 {
+  width: 100%;
+}
+/* SECTION-2 ALANI */
+.section_2 {
+  background-color: #e2e7e6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box {
+  height: 450px;
+  width: 23%;
+  padding: 20px 15px;
+  background-color: #fff;
+  margin-top: 15px;
+}
+.box-img {
+  height: 350px;
+  background-size: cover;
+  margin: 16px 0;
+  margin-top: 0;
+}
+.box-content {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/* .box-content a {
+  text-decoration: none;
+} */
+.box-content h2 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+.box-content a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+.box-content:hover {
+  background-color: black;
+  color: #fff;
+}
+.box-content a {
+  color: #fff;
+}
+.bespoke_p {
+  height: 100px;
+  align-items: center;
+  display: flex;
+}
+.bespoke {
+  padding-right: 100px;
+  margin-right: 100px;
+  text-wrap: nowrap;
+  font-family: "Bruno Ace", sans-serif;
+}
+/* HERO BOLUMU START*/
+.w-100-height {
+  height: 90vh;
+  width: 100%;
+}
+
+.carousel-item {
+  min-height: 300px;
+}
+
+.carousel-caption {
+  text-align: left !important;
+  margin-bottom: 200px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
